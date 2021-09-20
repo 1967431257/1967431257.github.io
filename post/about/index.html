@@ -9,7 +9,7 @@
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
 <title>关于 | 永远少年</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1630228446838">
+<link rel="shortcut icon" href="/favicon.ico?v=1632142116430">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -209,7 +209,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -1075,6 +1075,61 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/"" data-c="
+          &lt;pre&gt;&lt;code&gt;#include &amp;lt;REGX52.H&amp;gt;
+void Delay(unsigned int xms);//声明延迟函数
+
+unsigned char LEDNum;//定义lednum为无符号的char类型变量
+
+void main()
+{
+	P2=~0x01;				//上电默认LED1点亮
+while(1)
+{
+	if(P3_1==0)			//如果K1按钮按键按下
+	{
+		Delay(20);        //取消按键抖动
+		while(P3_1==0);//防止按键按着不松手
+		Delay(20);
+		
+		LEDNum++;		//LEDNum自增
+		if(LEDNum&amp;gt;=8)	//限制LEDNum自增范围
+			LEDNum=0;
+		P2=~(0x01&amp;lt;&amp;lt;LEDNum);	//LED的第LEDNum位点亮
+	}
+	if(P3_0==0)			//如果K2按钮按键按下
+	{
+		Delay(20);
+		while(P3_0==0);
+		Delay(20);
+		
+		if(LEDNum==0)	//LEDNum减到0后变为7
+			LEDNum=7;
+		else			//LEDNum未减到0，自减
+			LEDNum--;
+		P2=~(0x01&amp;lt;&amp;lt;LEDNum);	//0x01向左移位并取反，LED的第LEDNum位点亮
+	}
+}
+}
+
+void Delay(unsigned int xms)
+{
+unsigned char i, j;
+while(xms--)
+{
+	i = 2;
+	j = 239;
+	do
+	{
+		while (--j);
+	} while (--i);
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+">51单片机独立按键控制led移位</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/"" data-c="
