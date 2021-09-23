@@ -9,7 +9,7 @@
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
 <title>永远少年</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1632327308796">
+<link rel="shortcut icon" href="/favicon.ico?v=1632386775127">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -191,7 +191,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">5</span>
+        <span class="site-item-stat-count">8</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -264,6 +264,12 @@
           <small class="language" data-lan="tag">标签</small>
         </h2>
       </div>
+      
+      
+      
+      
+      
+      
       
       
       
@@ -527,11 +533,83 @@
     <div class="result" id="result">
       
       <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/shi/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int q(int x, int y)//函数
+{
+	int z = 0;
+	z = x + y;
+	return z;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;a, &amp;amp;b);
+	int c = q(a, b);调用函数q把ab值赋予q的函数里面
+	printf(&amp;quot;%d\n&amp;quot;, c);
+	return 0;
+}
+
+int main()
+{
+int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };//数组
+//char ch[5] = { &#39;a&#39;,&#39;b&#39;.&#39;c&#39; };//字符数组，设置的5实际上设置了3个剩下的默认为0
+int i = 0;//设置一个变量
+while (i &amp;lt; 10)//当i小于10停止循环
+{
+	printf(&amp;quot;%d&amp;quot;, arr[i]);// 打印arr这个数组，【】代表所占区域的编号
+	i++; // 每循环一次i增加1
+}
+return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+">C语言-函数和数组</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-while-xun-huan-yu-ju/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main()
+{
+int a = 0;
+while (a &amp;lt; 365)//如果表达式小于365将会执行下面代码
+{
+	printf(&amp;quot;一天过去了%d\n&amp;quot;, a);
+	a++;//每次循环一次a增加1当a大于365就会跳出循环
+}
+if (a == 365)
+{
+	printf(&amp;quot;一年过去了\n&amp;quot;);
+}
+return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+">C语言-while循环语句</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-if-yu-ju/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main()
+{
+int x = 0;//设置一个变量x
+printf(&amp;quot;要吃饭吗0/1\n&amp;quot;);
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);//检测输入的数字，&amp;amp;取地址就是把输入的值写到x里了
+if (x ==1)//如果括号内为表达式为真，x等于1那么执行下面的语句
+
+	printf(&amp;quot;获得一大碗面\n&amp;quot;);
+
+else否则会执行下面的语句
+
+	printf(&amp;quot;你什么也没有得到\n&amp;quot;);
+
+return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+">C语言-if语句</a>
+      </div>
+      
+      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-zi-fu-chuan/"" data-c="
           &lt;pre&gt;&lt;code&gt;int main()//字符串就是用双引号括起来的一串字符
 {
 &amp;quot;abcd&amp;quot;;
-&amp;quot;hello&amp;quot;
+&amp;quot;hello&amp;quot;；
 return 0;
 }
 
@@ -546,8 +624,21 @@ printf(&amp;quot;%s\n&amp;quot;, arr1);
 printf(&amp;quot;%s\n&amp;quot;, arr2);
 
 return 0;
-}&lt;/code&gt;&lt;/pre&gt;
-">C语言-字符串</a>
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\ &#39;         用于表示字符常量&lt;br&gt;
+&amp;quot;          用于表示一个字符串内部的双引号&lt;br&gt;
+\          用于表示一个反斜杠，防止被解释为转义序列符&lt;br&gt;
+\a          警告字符，产生蜂鸣&lt;br&gt;
+\b          退格符&lt;br&gt;
+\f          进纸符&lt;br&gt;
+\n          换行&lt;br&gt;
+\r          回车&lt;br&gt;
+\t          水平制表符&lt;br&gt;
+\v          垂直制表符&lt;br&gt;
+\ddd     ddd表示1-3个八进制数字 如：\130x&lt;br&gt;
+\xdd      dd表示2个十六进制数字 如：\x30 0&lt;/p&gt;
+">C语言-字符串和转义字符</a>
       </div>
       
       <div class="item">

@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
-<title>C语言-字符类型 | 永远少年</title>
+<title>C语言-函数和数组 | 永远少年</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1632386775127">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -55,8 +55,8 @@
 
 
 
-  <meta name="description" content="C语言-字符类型" />
-  <meta name="keywords" content="C语言" />
+  <meta name="description" content="C语言-函数和数组" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -342,8 +342,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/">
-      C语言-字符类型
+    <a class="post-title-link" href="https://bdfj.xyz/post/shi/">
+      C语言-函数和数组
     </a>
   </h1>
   <div class="post-meta">
@@ -351,22 +351,9 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2021-09-22 08:14:30">2021-09-22</span>
+      <span class="publish-time" data-t="2021-09-23 16:36:55">2021-09-23</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show language" data-lan="category-in">分类于</span>
-      
-      
-      <a href="https://bdfj.xyz/tag/jqKjjzlSG/">
-        <span>C语言</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
@@ -375,12 +362,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>243<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>158<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/c-yu-yan-zi-fu-lei-xing/" data-flag-title="C语言-字符类型" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/shi/" data-flag-title="C语言-函数和数组" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -389,34 +376,34 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <pre><code>int main（）
+              <pre><code>int q(int x, int y)//函数
 {
-char          字符数据类型  1个字节（byte）%s
-short         短整型            2个字节（byte）%d
-int             整形                4个字节（byte）%d
-long          长整型            4个字节（byte）%d
-longlong    更长的整形    8个字节（byte）%lld
-float          单精度浮点型  4个字节（byte）%f
-double      双精度浮点型  8个字节（byte）%lf
+	int z = 0;
+	z = x + y;
+	return z;
 }
-一个字节有8个bit
-％d整型输出，％ld长整型输出，
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf(&quot;%d%d&quot;, &amp;a, &amp;b);
+	int c = q(a, b);调用函数q把ab值赋予q的函数里面
+	printf(&quot;%d\n&quot;, c);
+	return 0;
+}
 
-％o以八进制数形式输出整数，
-
-％x以十六进制数形式输出整数，或输出字符串的地址。
-
-％u以十进制数输出unsigned型数据(无符号数)。注意：%d与%u有无符号的数值范围,不然数值打印     出来会有误。
-
-％c用来输出一个字符，
-
-％s用来输出一个字符串，
-
-％f用来输出实数，以小数形式输出，默认情况下保留小数点6位。
-
-%.100f用来输出实数，保留小数点100位。
-
-％e以指数形式输出实数</code></pre>
+int main()
+{
+int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };//数组
+//char ch[5] = { 'a','b'.'c' };//字符数组，设置的5实际上设置了3个剩下的默认为0
+int i = 0;//设置一个变量
+while (i &lt; 10)//当i小于10停止循环
+{
+	printf(&quot;%d&quot;, arr[i]);// 打印arr这个数组，【】代表所占区域的编号
+	i++; // 每循环一次i增加1
+}
+return 0;
+}</code></pre>
 
             </div>
             
@@ -429,7 +416,7 @@ double      双精度浮点型  8个字节（byte）%lf
     </li>
     <li class="post-copyright-link">
  <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/" title="C语言-字符类型">https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/</a>
+      <a href="https://bdfj.xyz/post/shi/" title="C语言-函数和数组">https://bdfj.xyz/post/shi/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -438,21 +425,15 @@ double      双精度浮点型  8个字节（byte）%lf
   </ul>
   <div class="tags">
     
-      <a href="https://bdfj.xyz/tag/jqKjjzlSG/"># C语言</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="C语言-变量和常量" href="https://bdfj.xyz/post/c-yu-yan-bian-liang-he-chang-liang/">C语言-变量和常量</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="C语言-变量和常量" href="https://bdfj.xyz/post/c-yu-yan-bian-liang-he-chang-liang/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="51单片机独立按键控制led移位" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">51单片机独立按键控制led移位</a>
-        <a class="nav-mobile-next" title="51单片机独立按键控制led移位" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">下一篇</a>
+        <a class="nav-pc-next" title="C语言-while循环语句" href="https://bdfj.xyz/post/c-yu-yan-while-xun-huan-yu-ju/">C语言-while循环语句</a>
+        <a class="nav-mobile-next" title="C语言-while循环语句" href="https://bdfj.xyz/post/c-yu-yan-while-xun-huan-yu-ju/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bdfj.xyz</id>
     <title>永远少年</title>
-    <updated>2021-09-22T16:15:15.422Z</updated>
+    <updated>2021-09-23T08:46:19.108Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bdfj.xyz"/>
     <link rel="self" href="https://bdfj.xyz/atom.xml"/>
@@ -11,7 +11,28 @@
     <icon>https://bdfj.xyz/favicon.ico</icon>
     <rights>All rights reserved 2021, 永远少年</rights>
     <entry>
-        <title type="html"><![CDATA[C语言-字符串]]></title>
+        <title type="html"><![CDATA[C语言-函数和数组]]></title>
+        <id>https://bdfj.xyz/post/shi/</id>
+        <link href="https://bdfj.xyz/post/shi/">
+        </link>
+        <updated>2021-09-23T08:36:55.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C语言-while循环语句]]></title>
+        <id>https://bdfj.xyz/post/c-yu-yan-while-xun-huan-yu-ju/</id>
+        <link href="https://bdfj.xyz/post/c-yu-yan-while-xun-huan-yu-ju/">
+        </link>
+        <updated>2021-09-23T08:30:18.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C语言-if语句]]></title>
+        <id>https://bdfj.xyz/post/c-yu-yan-if-yu-ju/</id>
+        <link href="https://bdfj.xyz/post/c-yu-yan-if-yu-ju/">
+        </link>
+        <updated>2021-09-23T08:20:33.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C语言-字符串和转义字符]]></title>
         <id>https://bdfj.xyz/post/c-yu-yan-zi-fu-chuan/</id>
         <link href="https://bdfj.xyz/post/c-yu-yan-zi-fu-chuan/">
         </link>
