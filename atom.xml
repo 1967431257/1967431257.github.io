@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bdfj.xyz</id>
     <title>永远少年</title>
-    <updated>2021-09-30T11:15:09.175Z</updated>
+    <updated>2022-06-15T05:41:47.857Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bdfj.xyz"/>
     <link rel="self" href="https://bdfj.xyz/atom.xml"/>
     <subtitle>这是一个咸鱼的站点。</subtitle>
     <logo>https://bdfj.xyz/images/avatar.png</logo>
     <icon>https://bdfj.xyz/favicon.ico</icon>
-    <rights>All rights reserved 2021, 永远少年</rights>
+    <rights>All rights reserved 2022, 永远少年</rights>
     <entry>
         <title type="html"><![CDATA[C语言-指针]]></title>
         <id>https://bdfj.xyz/post/c-yu-yan-zhi-zhen/</id>
