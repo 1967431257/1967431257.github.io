@@ -9,7 +9,7 @@
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
 <title>永远少年</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1660043845647">
+<link rel="shortcut icon" href="/favicon.ico?v=1660044711864">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -586,6 +586,26 @@ mkfs.ext4 /dev/sda1或mkfs.exfat /dev/sda1&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;挂载&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;mount /dev/sda1 /udisk&lt;/p&gt;
 &lt;p&gt;chmod 777 /udisk&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置开机行为&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;创建启动脚本&lt;/p&gt;
+&lt;p&gt;touch /etc/rc.local&lt;/p&gt;
+&lt;p&gt;echo &#39;#!/bin/sh -e&#39; &amp;gt; /etc/rc.local&lt;/p&gt;
+&lt;p&gt;echo &amp;quot;exit 0&amp;quot; &amp;gt;&amp;gt; /etc/rc.local&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;给权限&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;chmod +x /etc/rc.local&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;重载systemd配置管理器&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;systemctl daemon-reload&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;启动守护进程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;systemctl start rc-local&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;修改启动脚本&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;vi /etc/rc.local&lt;/p&gt;
+&lt;p&gt;按i进入写入 然后按键盘上方的数字键打100dd，删除100行&lt;/p&gt;
+&lt;p&gt;复制下方代码，粘贴进去，并保存&lt;/p&gt;
+&lt;p&gt;#!/bin/sh -e&lt;br&gt;
+sleep 2&lt;br&gt;
+mount /dev/sda1 /udisk &amp;amp;&lt;br&gt;
+sleep 2&lt;br&gt;
+exit 0&lt;/p&gt;
 ">wifi 棒子挂载u盘</a>
       </div>
       
