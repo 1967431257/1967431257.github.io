@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bdfj.xyz</id>
     <title>永远少年</title>
-    <updated>2022-06-15T05:43:49.330Z</updated>
+    <updated>2022-08-09T07:20:11.367Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bdfj.xyz"/>
     <link rel="self" href="https://bdfj.xyz/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://bdfj.xyz/images/avatar.png</logo>
     <icon>https://bdfj.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, 永远少年</rights>
+    <entry>
+        <title type="html"><![CDATA[wifi棒子使用樱花穿透]]></title>
+        <id>https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/</id>
+        <link href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/">
+        </link>
+        <updated>2022-08-09T04:30:02.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[C语言-指针]]></title>
         <id>https://bdfj.xyz/post/c-yu-yan-zhi-zhen/</id>
@@ -72,12 +79,5 @@
         <link href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">
         </link>
         <updated>2021-09-20T12:39:16.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[利用云盘映射一个本地磁盘]]></title>
-        <id>https://bdfj.xyz/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/</id>
-        <link href="https://bdfj.xyz/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/">
-        </link>
-        <updated>2021-08-29T08:53:45.000Z</updated>
     </entry>
 </feed>

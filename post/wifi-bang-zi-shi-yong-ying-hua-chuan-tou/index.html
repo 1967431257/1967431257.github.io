@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
-<title>C语言-字符类型 | 永远少年</title>
+<title>wifi棒子使用樱花穿透 | 永远少年</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1660029606904">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -55,8 +55,8 @@
 
 
 
-  <meta name="description" content="C语言-字符类型" />
-  <meta name="keywords" content="C语言" />
+  <meta name="description" content="wifi棒子使用樱花穿透" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -342,8 +342,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/">
-      C语言-字符类型
+    <a class="post-title-link" href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/">
+      wifi棒子使用樱花穿透
     </a>
   </h1>
   <div class="post-meta">
@@ -351,36 +351,23 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2021-09-22 08:14:30">2021-09-22</span>
+      <span class="publish-time" data-t="2022-08-09 12:30:02">2022-08-09</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show language" data-lan="category-in">分类于</span>
-      
-      
-      <a href="https://bdfj.xyz/tag/jqKjjzlSG/">
-        <span>C语言</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
+      <span>3<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>243<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>638<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/c-yu-yan-zi-fu-lei-xing/" data-flag-title="C语言-字符类型" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/" data-flag-title="wifi棒子使用樱花穿透" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -389,34 +376,73 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <pre><code>int main（）
-{
-char          字符数据类型  1个字节（byte）%s
-short         短整型            2个字节（byte）%d
-int             整形                4个字节（byte）%d
-long          长整型            4个字节（byte）%d
-longlong    更长的整形    8个字节（byte）%lld
-float          单精度浮点型  4个字节（byte）%f
-double      双精度浮点型  8个字节（byte）%lf
-}
-一个字节有8个bit
-％d整型输出，％ld长整型输出，
-
-％o以八进制数形式输出整数，
-
-％x以十六进制数形式输出整数，或输出字符串的地址。
-
-％u以十进制数输出unsigned型数据(无符号数)。注意：%d与%u有无符号的数值范围,不然数值打印     出来会有误。
-
-％c用来输出一个字符，
-
-％s用来输出一个字符串，
-
-％f用来输出实数，以小数形式输出，默认情况下保留小数点6位。
-
-%.100f用来输出实数，保留小数点100位。
-
-％e以指数形式输出实数</code></pre>
+              <p><strong>1.切换到root用户</strong><br>
+sudo su -<br>
+<strong>2.修复mobian源并安装基础软件:</strong></p>
+<p>apt update</p>
+<p>apt install curl -y</p>
+<p>echo &quot;deb http://repo.mobian-project.org/ bookworm main non-free&quot; &gt; /etc/apt/sources.list.d/mobian.list</p>
+<p>curl -s https://repo.mobian.org/mobian.gpg &gt; /etc/apt/trusted.gpg.d/mobian.gpg</p>
+<p>apt update</p>
+<p>apt install vim wget git cron dnsutils unzip lrzsz fdisk gdisk exfat-fuse exfat-utils -y</p>
+<p><strong>3.使用下面的命令进入 /usr/local/bin 目录并下载文件：</strong></p>
+<p>cd /usr/local/bin</p>
+<p>wget -O frpc https://getfrp.sh/d/frpc_linux_arm64<br>
+<img src="https://bdfj.xyz/post-images/1660020730777.png" alt="" loading="lazy"></p>
+<p><strong>4.然后设置权限并校验文件是否有损坏:</strong><br>
+chmod 755 frpc<br>
+ls -ls frpc<br>
+md5sum frpc<br>
+<img src="https://bdfj.xyz/post-images/1660020942212.png" alt="" loading="lazy"><br>
+此时 frpc 就安装完成并可以正常使用了。您可以用此命令查看 frpc 版本号：</p>
+<p>frpc -v</p>
+<p><strong>5.编写配置文件:</strong><br>
+执行下面的命令，应该会看到图中的提示</p>
+<p>vi /etc/systemd/system/frpc@.service</p>
+<figure data-type="image" tabindex="1"><img src="https://bdfj.xyz/post-images/1660021159727.png" alt="" loading="lazy"></figure>
+<p>#按一下 i 键，左下角应该会出现 -- INSERT -- 或者 -- 插入 -- 字样<br>
+然后复制并粘贴下面提供的服务文件内容，请注意 不要 多复制或少复制任何东西，确保粘贴后的内容和图中一模一样</p>
+<p>[Unit]<br>
+Description=SakuraFrp Service<br>
+After=network.target</p>
+<p>[Service]<br>
+Type=idle<br>
+User=nobody<br>
+Restart=on-failure<br>
+RestartSec=60s<br>
+ExecStart=/usr/local/bin/frpc -f %i</p>
+<p>[Install]<br>
+WantedBy=multi-user.target</p>
+<p><strong>#粘贴完成后按一下 ESC，左下角的 -- INSERT -- 会消失，此时输入 :wq 并按回车退出</strong><br>
+<img src="https://bdfj.xyz/post-images/1660028574748.png" alt="" loading="lazy"><br>
+执行下面的命令重载 Systemd，这样服务就配置完成了</p>
+<p>systemctl daemon-reload</p>
+<p><strong>6.启动/停止隧道</strong><br>
+使用下面的命令即可，start 是启动，stop 是停止</p>
+<p>systemctl &lt;start|stop&gt; &lt;Unit名称&gt;</p>
+<p>举个例子，开启访问密钥为 wdnmdtoken666666 的用户所拥有的 ID 为 12345 的隧道:</p>
+<p>systemctl start frpc@wdnmdtoken666666:12345</p>
+<p>访问密钥在下图<br>
+<img src="https://bdfj.xyz/post-images/1660028894669.png" alt="" loading="lazy"><br>
+ID号在<br>
+<img src="https://bdfj.xyz/post-images/1660028965370.png" alt="" loading="lazy"></p>
+<p><strong>查看隧道状态</strong></p>
+<p>systemctl status &lt;Unit名称&gt;</p>
+<p>举个例子，要查看上面开启的隧道状态可以使用</p>
+<p>systemctl status frpc@wdnmdtoken666666:12345</p>
+<p><strong>！绝对不要 开启重复的隧道，这会造成出现各种不可预计的 Bug<br>
+执行多次 systemctl start 是 安全 的<br>
+配置好 Systemd 后，不要 再用 frpc -f &lt;启动参数&gt; 的形式开启隧道</strong></p>
+<p><strong>如果忘记了之前开启过哪些隧道，使用下面的命令可以列出当前运行中的隧道</strong></p>
+<p>systemctl list-units &quot;frpc@*&quot;</p>
+<p><strong>查看隧道日志</strong></p>
+<p>journalctl -u &lt;Unit名称&gt;</p>
+<p>例如</p>
+<p>journalctl -u frpc@wdnmdtoken666666:12345</p>
+<p><strong>7配置开机自启</strong></p>
+<p>使用下面的命令启用/禁用服务，enable 是启用，disable 是禁用，操作完成后再用 status 检查一下状态</p>
+<p>systemctl &lt;enable|disable&gt; &lt;Unit名称&gt;<br>
+systemctl status &lt;Unit名称&gt;</p>
 
             </div>
             
@@ -429,7 +455,7 @@ double      双精度浮点型  8个字节（byte）%lf
     </li>
     <li class="post-copyright-link">
  <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/" title="C语言-字符类型">https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/</a>
+      <a href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/" title="wifi棒子使用樱花穿透">https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -438,21 +464,15 @@ double      双精度浮点型  8个字节（byte）%lf
   </ul>
   <div class="tags">
     
-      <a href="https://bdfj.xyz/tag/jqKjjzlSG/"># C语言</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="C语言-变量和常量" href="https://bdfj.xyz/post/c-yu-yan-bian-liang-he-chang-liang/">C语言-变量和常量</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="C语言-变量和常量" href="https://bdfj.xyz/post/c-yu-yan-bian-liang-he-chang-liang/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="51单片机独立按键控制led移位" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">51单片机独立按键控制led移位</a>
-        <a class="nav-mobile-next" title="51单片机独立按键控制led移位" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">下一篇</a>
+        <a class="nav-pc-next" title="C语言-指针" href="https://bdfj.xyz/post/c-yu-yan-zhi-zhen/">C语言-指针</a>
+        <a class="nav-mobile-next" title="C语言-指针" href="https://bdfj.xyz/post/c-yu-yan-zhi-zhen/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
