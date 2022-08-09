@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="Gridea静态个人博客">
-<meta name="description" content="温故而知新">
+<meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
-<title>测试 | </title>
-<link rel="shortcut icon" href="/favicon.ico?v=1628942925565">
-<link rel="stylesheet" href="/media/css/pisces.css">
+<title>测试 | 永远少年</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1660061421468">
+<link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -30,11 +30,25 @@
   integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
-  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
-  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 
@@ -49,7 +63,7 @@
   <div class="head-top-line"></div>
   <div class="header-box">
     
-<div class="pisces">
+<div class="gemini">
   <header class="header  ">
     <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
@@ -63,12 +77,12 @@
         <div class="site-title">
           
             <a href="/" class="brand">
-              <span></span>
+              <span>永远少年</span>
             </a>  
           
         </div>
         
-          <p class="subtitle">精于心，简于形</p>
+          <p class="subtitle">                         坐而言不如起而行。</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -76,66 +90,56 @@
           
             
             
-              
-            
             <li class="nav-item ">
               
               
-                <a href="/" target="_self">
-                  <i class="fa fa-home"></i> 首页
-                </a>
+                
+                  <a href="/" target="_self">
+                    <i class="fa fa-home"></i> 首页
+                  </a>
+                
               
             </li>
           
             
             
-              
-            
             <li class="nav-item ">
               
               
-                <a href="/archives/" target="_self">
-                  <i class="fa fa-archive"></i> 归档
-                </a>
+                
+                  <a href="/archives/" target="_self">
+                    <i class="fa fa-archive"></i> 归档
+                  </a>
+                
               
             </li>
           
             
             
-              
-            
             <li class="nav-item ">
               
               
-                <a href="/tags/" target="_self">
-                  <i class="fa fa-tags"></i> 标签
-                </a>
+                
+                  <a href="/tags/" target="_self">
+                    <i class="fa fa-tags"></i> 标签
+                  </a>
+                
               
             </li>
           
             
             
-              
-            
             <li class="nav-item ">
               
               
-                <a href="/post/about/" target="_self">
-                  <i class="fa fa-user"></i> 关于
-                </a>
+                
+                  <a href="/post/about/" target="_self">
+                    <i class="fa fa-user"></i> 关于
+                  </a>
+                
               
             </li>
           
-          
-            
-              <li class="nav-item ">
-                <a href="/friends/" target="_self">
-                  
-                    <i class="fa fa-address-book"></i> 友情链接
-                  
-                </a>
-              </li>
-            
           
           
             <li id="fa_search" class="nav-item">
@@ -175,7 +179,7 @@
   <div class="main-continer">
     
     <div
-      class="section-layout pisces ">
+      class="section-layout gemini ">
       <div class="section-layout-wrapper">
         
 
@@ -190,40 +194,62 @@
           </div>
         </div>
       
-      <div class="sidebar-body pisces" id="sidebar_body">
+      <div class="sidebar-body gemini" id="sidebar_body">
         
           
             
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">我是谁</p>
+    <p class="site-author-name">永远少年</p>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">13</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
   </div>
   
     
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://bdfj.xyz/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
   
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="">
+              <i class="fa fa-globe" title=""></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
   
 
 
@@ -316,7 +342,7 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi/">
+    <a class="post-title-link" href="https://bdfj.xyz/post/ce-shi/">
       测试
     </a>
   </h1>
@@ -325,24 +351,32 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2021-08-14 19:43:51">2021-08-14</span>
+      <span class="publish-time" data-t="2022-08-10 00:09:23">2022-08-10</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>0<span class="language" data-lan="minute">分钟</span></span>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>0<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>1<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+    
+    
+    <span id="/post/ce-shi/" data-flag-title="测试" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
     </span>
     
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <figure data-type="image" tabindex="1"><img src="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post-images/1628941441859.jfif" alt="" loading="lazy"></figure>
+              <p>111111111111111111111</p>
 
             </div>
             
@@ -351,15 +385,15 @@
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong class="language" data-lan="author">本文作者：</strong>
-      我是谁
+      永远少年
     </li>
     <li class="post-copyright-link">
-      <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi/" title="测试">https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi/</a>
+ <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://bdfj.xyz/post/ce-shi/" title="测试">https://bdfj.xyz/post/ce-shi/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
-      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+      本站点所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
     </li>
   </ul>
   <div class="tags">
@@ -368,19 +402,66 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="测试0" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-0/">测试0</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="测试0" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-0/">上一篇</a>
-      
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="wifi 棒子挂载u盘" href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/">wifi 棒子挂载u盘</a>
+        <a class="nav-mobile-next" title="wifi 棒子挂载u盘" href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
             
             
-  
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '1ad6yA7csVsc62FfVjPVXshR-gzGzoHsz',
+    appKey: '1OXdNYGtCRQyXVURGOiq1Xhg',
+    avatar: 'wavatar',
+    placeholder: '来了就留个评论在走叭😘。',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'false',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'true',
+  });
+</script>
 
           </div>
         </div>
@@ -392,8 +473,7 @@
     <span class="post-meta-divider">|</span>
     <span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人</span>
     <div class="copyright">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2019 | Theme By <a
-        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+      ©2021 永远少年 Powered by <a>Gridea</a>  & <a>HsxyHao</a>
     </div>
     <div class="poweredby">
       
@@ -401,7 +481,7 @@
   </footer>
   
   
-  <div class="pisces back-to-top" id="back_to_top">
+  <div class="gemini back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
     
     <span class="scrollpercent">
@@ -540,7 +620,7 @@
   }
 
   // 链接跳转
-  let newWindow = 'false'
+  let newWindow = 'true'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -829,13 +909,453 @@
     <div class="result" id="result">
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-0/"" data-c="
-          &lt;p&gt;测试&lt;/p&gt;
-">测试0</a>
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/ce-shi/"" data-c="
+          &lt;p&gt;111111111111111111111&lt;/p&gt;
+">测试</a>
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/about/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/"" data-c="
+          &lt;p&gt;&lt;strong&gt;创建用于挂载的目录&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;mkdir /udisk&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;看看是否识别到u盘&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;fdisk -l&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://bdfj.xyz/post-images/1660042798738.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;清理磁盘分区并新建&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;fdisk /dev/sda&lt;/p&gt;
+&lt;p&gt;d   删除分区&lt;br&gt;
+n   新建分区，一路回车&lt;br&gt;
+w   保存更改&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bdfj.xyz/post-images/1660042872397.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1660043046106.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;再次查看是否挂载&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;fdisk -l&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;格式化分区&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ext4性能好&lt;/strong&gt;安全性高&lt;strong&gt;但不兼容windows，exfat性能差&lt;/strong&gt;安全性差&lt;strong&gt;但兼容windows&lt;/strong&gt;&lt;br&gt;
+mkfs.ext4 /dev/sda1或mkfs.exfat /dev/sda1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;建议使用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;mkfs.ext4 /dev/sda1&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://bdfj.xyz/post-images/1660043520581.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;挂载&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;mount /dev/sda1 /udisk&lt;/p&gt;
+&lt;p&gt;chmod 777 /udisk&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置开机行为&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;创建启动脚本&lt;/p&gt;
+&lt;p&gt;touch /etc/rc.local&lt;/p&gt;
+&lt;p&gt;echo &#39;#!/bin/sh -e&#39; &amp;gt; /etc/rc.local&lt;/p&gt;
+&lt;p&gt;echo &amp;quot;exit 0&amp;quot; &amp;gt;&amp;gt; /etc/rc.local&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;给权限&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;chmod +x /etc/rc.local&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;重载systemd配置管理器&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;systemctl daemon-reload&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;启动守护进程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;systemctl start rc-local&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;修改启动脚本&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;vi /etc/rc.local&lt;/p&gt;
+&lt;p&gt;按i进入写入 然后按键盘上方的数字键打100dd，删除100行&lt;/p&gt;
+&lt;p&gt;复制下方代码，粘贴进去，并保存&lt;/p&gt;
+&lt;p&gt;#!/bin/sh -e&lt;br&gt;
+sleep 2&lt;br&gt;
+mount /dev/sda1 /udisk &amp;amp;&lt;br&gt;
+sleep 2&lt;br&gt;
+exit 0&lt;/p&gt;
+">wifi 棒子挂载u盘</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/"" data-c="
+          &lt;p&gt;&lt;strong&gt;1.切换到root用户&lt;/strong&gt;&lt;br&gt;
+sudo su -&lt;br&gt;
+&lt;strong&gt;2.修复mobian源并安装基础软件:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;apt update&lt;/p&gt;
+&lt;p&gt;apt install curl -y&lt;/p&gt;
+&lt;p&gt;echo &amp;quot;deb http://repo.mobian-project.org/ bookworm main non-free&amp;quot; &amp;gt; /etc/apt/sources.list.d/mobian.list&lt;/p&gt;
+&lt;p&gt;curl -s https://repo.mobian.org/mobian.gpg &amp;gt; /etc/apt/trusted.gpg.d/mobian.gpg&lt;/p&gt;
+&lt;p&gt;apt update&lt;/p&gt;
+&lt;p&gt;apt install vim wget git cron dnsutils unzip lrzsz fdisk gdisk exfat-fuse exfat-utils -y&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.使用下面的命令进入 /usr/local/bin 目录并下载文件：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;cd /usr/local/bin&lt;/p&gt;
+&lt;p&gt;wget -O frpc https://getfrp.sh/d/frpc_linux_arm64&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1660020730777.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4.然后设置权限并校验文件是否有损坏:&lt;/strong&gt;&lt;br&gt;
+chmod 755 frpc&lt;br&gt;
+ls -ls frpc&lt;br&gt;
+md5sum frpc&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1660020942212.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+此时 frpc 就安装完成并可以正常使用了。您可以用此命令查看 frpc 版本号：&lt;/p&gt;
+&lt;p&gt;frpc -v&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5.编写配置文件:&lt;/strong&gt;&lt;br&gt;
+执行下面的命令，应该会看到图中的提示&lt;/p&gt;
+&lt;p&gt;vi /etc/systemd/system/frpc@.service&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://bdfj.xyz/post-images/1660021159727.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;#按一下 i 键，左下角应该会出现 -- INSERT -- 或者 -- 插入 -- 字样&lt;br&gt;
+然后复制并粘贴下面提供的服务文件内容，请注意 不要 多复制或少复制任何东西，确保粘贴后的内容和图中一模一样&lt;/p&gt;
+&lt;p&gt;[Unit]&lt;br&gt;
+Description=SakuraFrp Service&lt;br&gt;
+After=network.target&lt;/p&gt;
+&lt;p&gt;[Service]&lt;br&gt;
+Type=idle&lt;br&gt;
+User=nobody&lt;br&gt;
+Restart=on-failure&lt;br&gt;
+RestartSec=60s&lt;br&gt;
+ExecStart=/usr/local/bin/frpc -f %i&lt;/p&gt;
+&lt;p&gt;[Install]&lt;br&gt;
+WantedBy=multi-user.target&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#粘贴完成后按一下 ESC，左下角的 -- INSERT -- 会消失，此时输入 :wq 并按回车退出&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1660028574748.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+执行下面的命令重载 Systemd，这样服务就配置完成了&lt;/p&gt;
+&lt;p&gt;systemctl daemon-reload&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6.启动/停止隧道&lt;/strong&gt;&lt;br&gt;
+使用下面的命令即可，start 是启动，stop 是停止&lt;/p&gt;
+&lt;p&gt;systemctl &amp;lt;start|stop&amp;gt; &amp;lt;Unit名称&amp;gt;&lt;/p&gt;
+&lt;p&gt;举个例子，开启访问密钥为 wdnmdtoken666666 的用户所拥有的 ID 为 12345 的隧道:&lt;/p&gt;
+&lt;p&gt;systemctl start frpc@wdnmdtoken666666:12345&lt;/p&gt;
+&lt;p&gt;访问密钥在下图&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1660028894669.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+ID号在&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1660028965370.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查看隧道状态&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;systemctl status &amp;lt;Unit名称&amp;gt;&lt;/p&gt;
+&lt;p&gt;举个例子，要查看上面开启的隧道状态可以使用&lt;/p&gt;
+&lt;p&gt;systemctl status frpc@wdnmdtoken666666:12345&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;！绝对不要 开启重复的隧道，这会造成出现各种不可预计的 Bug&lt;br&gt;
+执行多次 systemctl start 是 安全 的&lt;br&gt;
+配置好 Systemd 后，不要 再用 frpc -f &amp;lt;启动参数&amp;gt; 的形式开启隧道&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果忘记了之前开启过哪些隧道，使用下面的命令可以列出当前运行中的隧道&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;systemctl list-units &amp;quot;frpc@*&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查看隧道日志&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;journalctl -u &amp;lt;Unit名称&amp;gt;&lt;/p&gt;
+&lt;p&gt;例如&lt;/p&gt;
+&lt;p&gt;journalctl -u frpc@wdnmdtoken666666:12345&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7配置开机自启&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用下面的命令启用/禁用服务，enable 是启用，disable 是禁用，操作完成后再用 status 检查一下状态&lt;/p&gt;
+&lt;p&gt;systemctl &amp;lt;enable|disable&amp;gt; &amp;lt;Unit名称&amp;gt;&lt;br&gt;
+systemctl status &amp;lt;Unit名称&amp;gt;&lt;/p&gt;
+">wifi棒子使用樱花穿透</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-zhi-zhen/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main()
+{
+int a = 10;//内存中分配4个字节
+int* pa = &amp;amp;a;//pa用来放a的地址，叫做指针变量
+*pa = 20; //*解引用操作，通过pa里的地址找到a，并赋值
+printf(&amp;quot;%d\n&amp;quot;, a);
+
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+">C语言-指针</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-guan-jian-zi/"" data-c="
+          &lt;pre&gt;&lt;code&gt;auto声明自动变量
+short声明短整型变量或函数
+int声明整型变量或函数
+long声明长整型变量或函数
+float声明浮点型变量或函数
+double声明双精度变量或函数
+char声明字符型变量或函数
+struct声明结构体变量或函数
+union声明共用数据类型
+enum声明枚举类型
+typedef用以给数据类型取别名
+const声明只读变量
+unsigned声明无符号类型变量或函数
+signed声明有符号类型变量或函数
+extern声明变量是在其他文件正声明
+register	声明寄存器变量
+static	声明静态变量
+volatile	说明变量在程序执行中可被隐含地改变
+void声明函数无返回值或无参数，声明无类型指针
+if条件语句
+else条件语句否定分支（与 if 连用）
+switch用于开关语句
+case开关语句分支
+for一种循环语句
+do循环语句的循环体
+while循环语句的循环条件
+goto无条件跳转语句
+continue结束当前循环，开始下一轮循环
+break跳出当前循环
+default开关语句中的“其他”分支
+sizeof计算数据类型长度
+return子程序返回语句（可以带参数，也可不带参数）循环条件&lt;/code&gt;&lt;/pre&gt;
+">C语言-关键字</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/shi/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int q(int x, int y)//函数
+{
+	int z = 0;
+	z = x + y;
+	return z;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;a, &amp;amp;b);
+	int c = q(a, b);调用函数q把ab值赋予q的函数里面
+	printf(&amp;quot;%d\n&amp;quot;, c);
+	return 0;
+}
+
+int main()
+{
+int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };//数组
+//char ch[5] = { &#39;a&#39;,&#39;b&#39;.&#39;c&#39; };//字符数组，设置的5实际上设置了3个剩下的默认为0
+int i = 0;//设置一个变量
+while (i &amp;lt; 10)//当i小于10停止循环
+{
+	printf(&amp;quot;%d&amp;quot;, arr[i]);// 打印arr这个数组，【】代表所占区域的编号
+	i++; // 每循环一次i增加1
+}
+return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+">C语言-函数和数组</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-while-xun-huan-yu-ju/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main()
+{
+int a = 0;
+while (a &amp;lt; 365)//如果表达式小于365将会执行下面代码
+{
+	printf(&amp;quot;一天过去了%d\n&amp;quot;, a);
+	a++;//每次循环一次a增加1当a大于365就会跳出循环
+}
+if (a == 365)
+{
+	printf(&amp;quot;一年过去了\n&amp;quot;);
+}
+return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+">C语言-while循环语句</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-if-yu-ju/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main()
+{
+int x = 0;//设置一个变量x
+printf(&amp;quot;要吃饭吗0/1\n&amp;quot;);
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);//检测输入的数字，&amp;amp;取地址就是把输入的值写到x里了
+if (x ==1)//如果括号内为表达式为真，x等于1那么执行下面的语句
+
+	printf(&amp;quot;获得一大碗面\n&amp;quot;);
+
+else否则会执行下面的语句
+
+	printf(&amp;quot;你什么也没有得到\n&amp;quot;);
+
+return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+">C语言-if语句</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-zi-fu-chuan/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main()//字符串就是用双引号括起来的一串字符
+{
+&amp;quot;abcd&amp;quot;;
+&amp;quot;hello&amp;quot;；
+return 0;
+}
+
+
+int main()
+{
+//char arr[] =&amp;quot;hello&amp;quot;;
+
+char arr1[] = &amp;quot;abc&amp;quot;;
+char arr2[] = { &#39;a&#39;,&#39;b&#39;,&#39;c&#39; ,&#39;\0&#39;};
+printf(&amp;quot;%s\n&amp;quot;, arr1);
+printf(&amp;quot;%s\n&amp;quot;, arr2);
+
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\ &#39;         用于表示字符常量&lt;br&gt;
+&amp;quot;          用于表示一个字符串内部的双引号&lt;br&gt;
+\          用于表示一个反斜杠，防止被解释为转义序列符&lt;br&gt;
+\a          警告字符，产生蜂鸣&lt;br&gt;
+\b          退格符&lt;br&gt;
+\f          进纸符&lt;br&gt;
+\n          换行&lt;br&gt;
+\r          回车&lt;br&gt;
+\t          水平制表符&lt;br&gt;
+\v          垂直制表符&lt;br&gt;
+\ddd     ddd表示1-3个八进制数字 如：\130x&lt;br&gt;
+\xdd      dd表示2个十六进制数字 如：\x30 0&lt;/p&gt;
+">C语言-字符串和转义字符</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-bian-liang-he-chang-liang/"" data-c="
+          &lt;pre&gt;&lt;code&gt;变量
+int b = 2021;//全局变量，在主函数外面的变量叫全局变量。
+int main()
+{	
+printf(&amp;quot;hehe\n&amp;quot;);
+{
+	int a = 10;// 局部变量，生命周期在括号内，出括号生命结束，全局变量和局部变量冲突的情况下，局部优先。
+	printf(&amp;quot;1__%d\n&amp;quot;, b);
+	printf(&amp;quot;a = %d\n&amp;quot;, a);
+}
+
+printf(&amp;quot;2__%c\n&amp;quot;, b);
+return 0;
+
+}
+——————————————————————————————
+常量
+#define max 1000//  标识符常量
+3.14；浮点型常量
+10；整数常量
+‘a’；字符常量
+“abcd”字符串常量
+
+int main()
+{
+const int num = 10;当变量被const修饰后就不能被改变
+//num = 20;
+printf(&amp;quot;%d\n&amp;quot;, num);
+return 0;
+
+}
+——————————————————————————————
+enum sex //枚举常量,可以被一 一列举的常量，enum 枚举关键字
+{
+//  这3个值就是枚举类型的变量的未来可能取值
+MALE ,
+//MALE = 3 ,  //赋初始值，结果就会变成3，4，5
+FAMALE ,
+aaaa
+};
+int main()
+{
+enum sex s = MALE;//用enum sex这个枚举类型定义一个变量s那么这个s的取值只能是上面定                                         义的3个里面的一个
+	printf(&amp;quot;%d\n&amp;quot;, MALE);结果为0           //枚举从0开始
+	printf(&amp;quot;%d\n&amp;quot;, FAMALE);结果为1       // 
+	printf(&amp;quot;%d\n&amp;quot;, aaaa);结果为2             //
+	return 0;
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+">C语言-变量和常量</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/"" data-c="
+          &lt;pre&gt;&lt;code&gt;int main（）
+{
+char          字符数据类型  1个字节（byte）%s
+short         短整型            2个字节（byte）%d
+int             整形                4个字节（byte）%d
+long          长整型            4个字节（byte）%d
+longlong    更长的整形    8个字节（byte）%lld
+float          单精度浮点型  4个字节（byte）%f
+double      双精度浮点型  8个字节（byte）%lf
+}
+一个字节有8个bit
+％d整型输出，％ld长整型输出，
+
+％o以八进制数形式输出整数，
+
+％x以十六进制数形式输出整数，或输出字符串的地址。
+
+％u以十进制数输出unsigned型数据(无符号数)。注意：%d与%u有无符号的数值范围,不然数值打印     出来会有误。
+
+％c用来输出一个字符，
+
+％s用来输出一个字符串，
+
+％f用来输出实数，以小数形式输出，默认情况下保留小数点6位。
+
+%.100f用来输出实数，保留小数点100位。
+
+％e以指数形式输出实数&lt;/code&gt;&lt;/pre&gt;
+">C语言-字符类型</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/"" data-c="
+          &lt;pre&gt;&lt;code&gt;#include &amp;lt;REGX52.H&amp;gt;
+void Delay(unsigned int xms);//声明延迟函数
+
+unsigned char LEDNum;//定义lednum为无符号的char类型变量
+
+void main()
+{
+	P2=~0x01;				//上电默认LED1点亮
+while(1)
+{
+	if(P3_1==0)			//如果K1按钮按键按下
+	{
+		Delay(20);        //取消按键抖动
+		while(P3_1==0);//防止按键按着不松手
+		Delay(20);
+		
+		LEDNum++;		//LEDNum自增
+		if(LEDNum&amp;gt;=8)	//限制LEDNum自增范围
+			LEDNum=0;
+		P2=~(0x01&amp;lt;&amp;lt;LEDNum);	//LED的第LEDNum位点亮
+	}
+	if(P3_0==0)			//如果K2按钮按键按下
+	{
+		Delay(20);
+		while(P3_0==0);
+		Delay(20);
+		
+		if(LEDNum==0)	//LEDNum减到0后变为7
+			LEDNum=7;
+		else			//LEDNum未减到0，自减
+			LEDNum--;
+		P2=~(0x01&amp;lt;&amp;lt;LEDNum);	//0x01向左移位并取反，LED的第LEDNum位点亮
+	}
+}
+}
+
+void Delay(unsigned int xms)
+{
+unsigned char i, j;
+while(xms--)
+{
+	i = 2;
+	j = 239;
+	do
+	{
+		while (--j);
+	} while (--i);
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+">51单片机独立按键控制led移位</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/"" data-c="
+          &lt;p&gt;软件链接：https://kudoushinichi.lanzoui.com/irzs3t2rx8j&lt;br&gt;
+安装好后，桌面会出现一个本地的管理网页&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1630227381671.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+双击打开后，注册账号并登录&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1630227480505.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+点击选择阿里云盘，用手机app登录即可。&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1630228209489.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+传输速度取决于网速，用来保存杂乱的文件还是不错的。&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1630228262125.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+创建完成后就会出现一个本地磁盘。&lt;br&gt;
+&lt;img src=&#34;https://bdfj.xyz/post-images/1630228436533.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">利用云盘映射一个本地磁盘</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/about/"" data-c="
           &lt;blockquote&gt;
 &lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -844,12 +1364,6 @@
 &lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
 &lt;h2 id=&#34;联系我呀qq1967431257&#34;&gt;📬 联系我呀：QQ1967431257&lt;/h2&gt;
 ">关于</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post/ce-shi/"" data-c="
-          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://serverless-page-bucket-9jszd3av-1303187013.cos-website.ap-hongkong.myqcloud.com/post-images/1628941441859.jfif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-">测试</a>
       </div>
       
     </div>
@@ -1144,6 +1658,10 @@
 </script>
 
 
+<script src="/media/js/mouse/love.js"></script>
+
+
+<script src="/media/js/cool.js"></script>
 
 
 
