@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bdfj.xyz</id>
     <title>永远少年</title>
-    <updated>2022-08-09T07:41:53.331Z</updated>
+    <updated>2022-08-09T11:13:43.843Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bdfj.xyz"/>
     <link rel="self" href="https://bdfj.xyz/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://bdfj.xyz/images/avatar.png</logo>
     <icon>https://bdfj.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, 永远少年</rights>
+    <entry>
+        <title type="html"><![CDATA[wifi 棒子挂载u盘]]></title>
+        <id>https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/</id>
+        <link href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/">
+        </link>
+        <updated>2022-08-09T10:55:15.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[wifi棒子使用樱花穿透]]></title>
         <id>https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/</id>
@@ -72,12 +79,5 @@
         <link href="https://bdfj.xyz/post/c-yu-yan-zi-fu-lei-xing/">
         </link>
         <updated>2021-09-22T00:14:30.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[51单片机独立按键控制led移位]]></title>
-        <id>https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/</id>
-        <link href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">
-        </link>
-        <updated>2021-09-20T12:39:16.000Z</updated>
     </entry>
 </feed>

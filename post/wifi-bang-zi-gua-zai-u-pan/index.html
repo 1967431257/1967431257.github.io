@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
-<title>利用云盘映射一个本地磁盘 | 永远少年</title>
+<title>wifi 棒子挂载u盘 | 永远少年</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1660043621768">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -55,7 +55,7 @@
 
 
 
-  <meta name="description" content="利用云盘映射一个本地磁盘" />
+  <meta name="description" content="wifi 棒子挂载u盘" />
   <meta name="keywords" content="" />
 </head>
 
@@ -342,8 +342,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://bdfj.xyz/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/">
-      利用云盘映射一个本地磁盘
+    <a class="post-title-link" href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/">
+      wifi 棒子挂载u盘
     </a>
   </h1>
   <div class="post-meta">
@@ -351,7 +351,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2021-08-29 16:53:45">2021-08-29</span>
+      <span class="publish-time" data-t="2022-08-09 18:55:15">2022-08-09</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -362,12 +362,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>93<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>116<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/" data-flag-title="利用云盘映射一个本地磁盘" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/wifi-bang-zi-gua-zai-u-pan/" data-flag-title="wifi 棒子挂载u盘" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -376,17 +376,29 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <p>软件链接：https://kudoushinichi.lanzoui.com/irzs3t2rx8j<br>
-安装好后，桌面会出现一个本地的管理网页<br>
-<img src="https://bdfj.xyz/post-images/1630227381671.png" alt="" loading="lazy"><br>
-双击打开后，注册账号并登录<br>
-<img src="https://bdfj.xyz/post-images/1630227480505.png" alt="" loading="lazy"><br>
-点击选择阿里云盘，用手机app登录即可。<br>
-<img src="https://bdfj.xyz/post-images/1630228209489.png" alt="" loading="lazy"><br>
-传输速度取决于网速，用来保存杂乱的文件还是不错的。<br>
-<img src="https://bdfj.xyz/post-images/1630228262125.png" alt="" loading="lazy"><br>
-创建完成后就会出现一个本地磁盘。<br>
-<img src="https://bdfj.xyz/post-images/1630228436533.png" alt="" loading="lazy"></p>
+              <p><strong>创建用于挂载的目录</strong></p>
+<p>mkdir /udisk</p>
+<p><strong>看看是否识别到u盘</strong></p>
+<p>fdisk -l</p>
+<figure data-type="image" tabindex="1"><img src="https://bdfj.xyz/post-images/1660042798738.png" alt="" loading="lazy"></figure>
+<p><strong>清理磁盘分区并新建</strong></p>
+<p>fdisk /dev/sda</p>
+<p>d   删除分区<br>
+n   新建分区，一路回车<br>
+w   保存更改</p>
+<p><img src="https://bdfj.xyz/post-images/1660042872397.png" alt="" loading="lazy"><br>
+<img src="https://bdfj.xyz/post-images/1660043046106.png" alt="" loading="lazy"></p>
+<p><strong>再次查看是否挂载</strong></p>
+<p>fdisk -l</p>
+<p><strong>格式化分区</strong></p>
+<p><strong>ext4性能好</strong>安全性高<strong>但不兼容windows****，exfat性能差</strong>安全性差<strong>但兼容windows</strong><br>
+mkfs.ext4 /dev/sda1或mkfs.exfat /dev/sda1</p>
+<p><strong>建议使用：</strong></p>
+<p>mkfs.ext4 /dev/sda1</p>
+<figure data-type="image" tabindex="2"><img src="https://bdfj.xyz/post-images/1660043520581.png" alt="" loading="lazy"></figure>
+<p><strong>挂载</strong></p>
+<p>mount /dev/sda1 /udisk</p>
+<p>chmod 777 /udisk</p>
 
             </div>
             
@@ -399,7 +411,7 @@
     </li>
     <li class="post-copyright-link">
  <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://bdfj.xyz/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/" title="利用云盘映射一个本地磁盘">https://bdfj.xyz/post/li-yong-yun-pan-ying-she-yi-ge-ben-di-ci-pan/</a>
+      <a href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/" title="wifi 棒子挂载u盘">https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -412,12 +424,12 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="51单片机独立按键控制led移位" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">51单片机独立按键控制led移位</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="51单片机独立按键控制led移位" href="https://bdfj.xyz/post/51-dan-pian-ji-du-li-an-jian-kong-zhi-led-yi-wei/">上一篇</a>
-      
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="wifi棒子使用樱花穿透" href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/">wifi棒子使用樱花穿透</a>
+        <a class="nav-mobile-next" title="wifi棒子使用樱花穿透" href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
