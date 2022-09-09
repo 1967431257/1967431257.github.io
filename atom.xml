@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bdfj.xyz</id>
     <title>永远少年</title>
-    <updated>2022-09-09T06:49:41.478Z</updated>
+    <updated>2022-09-09T06:53:02.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bdfj.xyz"/>
     <link rel="self" href="https://bdfj.xyz/atom.xml"/>
@@ -88,6 +88,18 @@ mkfs.ext4 /dev/sda1或mkfs.exfat /dev/sda1</p>
         <link href="https://bdfj.xyz/post/wifi-bang-zi-shi-yong-ying-hua-chuan-tou/">
         </link>
         <updated>2022-08-09T04:30:02.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>1.切换到root用户</strong><br>
+sudo su -<br>
+<strong>2.修复mobian源并安装基础软件:</strong></p>
+<pre><code>apt update
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>1.切换到root用户</strong><br>
+sudo su -<br>
+<strong>2.修复mobian源并安装基础软件:</strong></p>
+<pre><code>apt update
+</code></pre>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[C语言-指针]]></title>
