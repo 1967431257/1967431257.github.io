@@ -9,7 +9,7 @@
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
 <title>wifi棒子青龙面板 | 永远少年</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1662706604091">
+<link rel="shortcut icon" href="/favicon.ico?v=1662706773757">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -376,17 +376,22 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <p>更新源<br>
-apt-get update<br>
-安装命令<br>
-apt install curl wget<br>
-安装docker<br>
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun<br>
-换源<br>
-echo '{&quot;registry-mirrors&quot;: [&quot;https://alzgoonw.mirror.aliyuncs.com&quot;]}' &gt; /etc/docker/daemon.json<br>
-重启服务<br>
-systemctl restart docker &amp;&amp; systemctl status docker &amp;&amp; reboot<br>
-安装青龙</p>
+              <p>更新源</p>
+<pre><code>apt-get update
+</code></pre>
+<p>安装命令</p>
+<pre><code>apt install curl wget
+</code></pre>
+<p>安装docker</p>
+<pre><code>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+</code></pre>
+<p>换源</p>
+<pre><code>echo '{&quot;registry-mirrors&quot;: [&quot;https://alzgoonw.mirror.aliyuncs.com&quot;]}' &gt; /etc/docker/daemon.json
+</code></pre>
+<p>重启服务</p>
+<pre><code>systemctl restart docker &amp;&amp; systemctl status docker &amp;&amp; reboot
+</code></pre>
+<p>安装青龙</p>
 <pre><code>mkdir /Docker
 docker run -dit \
 --name QingLong \
@@ -402,10 +407,12 @@ docker run -dit \
 --label com.centurylinklabs.watchtower.enable=false \
 whyour/qinglong:latest
 </code></pre>
-<p>拉取依赖<br>
-apk add --no-cache gcc g++ python3-dev py-pip mysql-dev linux-headers libffi-dev openssl-dev</p>
-<p>安装dailycheckin<br>
-pip3 install dailycheckin --upgrade</p>
+<p>拉取依赖</p>
+<pre><code>apk add --no-cache gcc g++ python3-dev py-pip mysql-dev linux-headers libffi-dev openssl-dev
+</code></pre>
+<p>安装dailycheckin</p>
+<pre><code>pip3 install dailycheckin --upgrade
+</code></pre>
 <p>使用手册<br>
 https://sitoi.gitee.io/dailycheckin/#_3</p>
 
@@ -941,17 +948,22 @@ https://sitoi.gitee.io/dailycheckin/#_3</p>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://bdfj.xyz/post/ce-shi/"" data-c="
-          &lt;p&gt;更新源&lt;br&gt;
-apt-get update&lt;br&gt;
-安装命令&lt;br&gt;
-apt install curl wget&lt;br&gt;
-安装docker&lt;br&gt;
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun&lt;br&gt;
-换源&lt;br&gt;
-echo &#39;{&amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://alzgoonw.mirror.aliyuncs.com&amp;quot;]}&#39; &amp;gt; /etc/docker/daemon.json&lt;br&gt;
-重启服务&lt;br&gt;
-systemctl restart docker &amp;amp;&amp;amp; systemctl status docker &amp;amp;&amp;amp; reboot&lt;br&gt;
-安装青龙&lt;/p&gt;
+          &lt;p&gt;更新源&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt-get update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装命令&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt install curl wget
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装docker&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;换源&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &#39;{&amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://alzgoonw.mirror.aliyuncs.com&amp;quot;]}&#39; &amp;gt; /etc/docker/daemon.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;重启服务&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl restart docker &amp;amp;&amp;amp; systemctl status docker &amp;amp;&amp;amp; reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装青龙&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkdir /Docker
 docker run -dit \
 --name QingLong \
@@ -967,10 +979,12 @@ docker run -dit \
 --label com.centurylinklabs.watchtower.enable=false \
 whyour/qinglong:latest
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;拉取依赖&lt;br&gt;
-apk add --no-cache gcc g++ python3-dev py-pip mysql-dev linux-headers libffi-dev openssl-dev&lt;/p&gt;
-&lt;p&gt;安装dailycheckin&lt;br&gt;
-pip3 install dailycheckin --upgrade&lt;/p&gt;
+&lt;p&gt;拉取依赖&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apk add --no-cache gcc g++ python3-dev py-pip mysql-dev linux-headers libffi-dev openssl-dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装dailycheckin&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip3 install dailycheckin --upgrade
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;使用手册&lt;br&gt;
 https://sitoi.gitee.io/dailycheckin/#_3&lt;/p&gt;
 ">wifi棒子青龙面板</a>
