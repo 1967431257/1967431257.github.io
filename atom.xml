@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bdfj.xyz</id>
     <title>永远少年</title>
-    <updated>2022-09-04T06:32:04.884Z</updated>
+    <updated>2022-09-09T06:49:41.478Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bdfj.xyz"/>
     <link rel="self" href="https://bdfj.xyz/atom.xml"/>
@@ -23,6 +23,64 @@
         <link href="https://bdfj.xyz/post/wifi-bang-zi-gua-zai-u-pan/">
         </link>
         <updated>2022-08-09T10:55:15.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>创建用于挂载的目录</strong></p>
+<pre><code>mkdir /udisk
+</code></pre>
+<p><strong>看看是否识别到u盘</strong></p>
+<pre><code>fdisk -l
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://bdfj.xyz/post-images/1660042798738.png" alt="" loading="lazy"></figure>
+<p><strong>清理磁盘分区并新建</strong></p>
+<pre><code>fdisk /dev/sda
+</code></pre>
+<p>d   删除分区<br>
+n   新建分区，一路回车<br>
+w   保存更改</p>
+<p><img src="https://bdfj.xyz/post-images/1660042872397.png" alt="" loading="lazy"><br>
+<img src="https://bdfj.xyz/post-images/1660043046106.png" alt="" loading="lazy"></p>
+<p><strong>再次查看是否挂载</strong></p>
+<pre><code>fdisk -l
+</code></pre>
+<p><strong>格式化分区</strong></p>
+<p><strong>ext4性能好</strong>安全性高<strong>但不兼容windows，exfat性能差</strong>安全性差<strong>但兼容windows</strong><br>
+mkfs.ext4 /dev/sda1或mkfs.exfat /dev/sda1</p>
+<p><strong>建议使用：</strong></p>
+<pre><code>mkfs.ext4 /dev/sda1
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://bdfj.xyz/post-images/1660043520581.png" alt="" loading="lazy"></figure>
+<p><strong>挂载</strong></p>
+<pre><code>mount /dev/sda1 /udisk
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>创建用于挂载的目录</strong></p>
+<pre><code>mkdir /udisk
+</code></pre>
+<p><strong>看看是否识别到u盘</strong></p>
+<pre><code>fdisk -l
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://bdfj.xyz/post-images/1660042798738.png" alt="" loading="lazy"></figure>
+<p><strong>清理磁盘分区并新建</strong></p>
+<pre><code>fdisk /dev/sda
+</code></pre>
+<p>d   删除分区<br>
+n   新建分区，一路回车<br>
+w   保存更改</p>
+<p><img src="https://bdfj.xyz/post-images/1660042872397.png" alt="" loading="lazy"><br>
+<img src="https://bdfj.xyz/post-images/1660043046106.png" alt="" loading="lazy"></p>
+<p><strong>再次查看是否挂载</strong></p>
+<pre><code>fdisk -l
+</code></pre>
+<p><strong>格式化分区</strong></p>
+<p><strong>ext4性能好</strong>安全性高<strong>但不兼容windows，exfat性能差</strong>安全性差<strong>但兼容windows</strong><br>
+mkfs.ext4 /dev/sda1或mkfs.exfat /dev/sda1</p>
+<p><strong>建议使用：</strong></p>
+<pre><code>mkfs.ext4 /dev/sda1
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://bdfj.xyz/post-images/1660043520581.png" alt="" loading="lazy"></figure>
+<p><strong>挂载</strong></p>
+<pre><code>mount /dev/sda1 /udisk
+</code></pre>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[wifi棒子使用樱花穿透]]></title>
