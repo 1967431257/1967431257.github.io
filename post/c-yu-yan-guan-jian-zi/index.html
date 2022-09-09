@@ -9,7 +9,7 @@
 <meta name="description" content="这是一个咸鱼的站点。">
 <meta name="theme-color" content="#000">
 <title>C语言-关键字 | 永远少年</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1662709472913">
+<link rel="shortcut icon" href="/favicon.ico?v=1662712005692">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -522,7 +522,7 @@ return子程序返回语句（可以带参数，也可不带参数）循环条�
     placeholder: '来了就留个评论在走叭😘。',
     pageSize: '',
     lang: 'zh-cn',
-    enableQQ: 'true' === 'false',
+    enableQQ: 'true' === 'true',
     visitor: 'true' === 'true',
     highlight: 'true' === 'true',
     avatarForce: 'true' === 'true',
@@ -560,7 +560,7 @@ return子程序返回语句（可以带参数，也可不带参数）循环条�
   
 <link rel="stylesheet" href="/media/live2d/css/live2d.css" />
 <div class="box-scale">
-  <div id="landlord" style="left: 5px;bottom: px;"
+  <div id="landlord" style="left: 5px;bottom: 66px;"
     data-key="">
     <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
     
@@ -1096,6 +1096,48 @@ return子程序返回语句（可以带参数，也可不带参数）循环条�
 	}
 </script>
   
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <div class="aplayer" id="aplayer"></div>
+  <script>
+  let musics = JSON.parse('[{"author":"RADWIMPS","cover":"http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/76674f2c627a51f60e70a4e287caad3c/5fe58def05c398bccfb6a41c50ad5c16","lrc":"http://59.110.45.28/m/api/lrc/yqe/id/67c6O8y36bZlEEe4dAH0RulBw8Oi6bY-lsKzT8ZYtOf9YnQKmuGntFk6ZNkiHOrufvYUxBcfNwtxT4YSNBjAa_LEfUnuxC1si9JfXSHE6-XCHH5i9sNhL_rhGr9h-QqhgUIya1WvqUZj0FSfLCdZnyKcHgzgSXBh0a3IVqPhAA/name/%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%AA%E3%81%84%E3%82%84(Movie%20Edit)(%E5%8A%A8%E6%BC%AB%E3%80%8A%E5%90%9B%E3%81%AE%E5%90%8D%E3%81%AF%E3%80%82%E3%80%8B%E6%8F%92%E6%9B%B2)%20-%20RADWIMPS.lrc","musicLink":"http://tyst.migu.cn/public/product9th/product44/2021/08/2314/2020%E5%B9%B411%E6%9C%8825%E6%97%A521%E7%82%B910%E5%88%86%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5%E7%B1%B3%E4%B8%9D%E5%85%8B185%E9%A6%96/%E5%85%A8%E6%9B%B2%E8%AF%95%E5%90%AC/Mp3_64_22_16/69987100282145917.mp3","musicName":"なんでもないや(Movie Edit)(动漫《君の名は。》插曲) "}]');
+  let mediaMusic = [];
+  for (let i = 0; i < musics.length; i++) {
+    let item = musics[i];
+    mediaMusic.push({
+      name: item.musicName,
+      artist: item.author,
+      url: item.musicLink,
+      lrc: item.lrc,
+      cover: item.cover
+    });
+  }
+
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      lrcType: 3,
+      listFolded: false,
+      listMaxHeight: 90,
+      audio: mediaMusic
+  });
+  window.addEventListener('load', function() {
+    let postBody = document.querySelector('#post_body');
+    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+    postBody && hs.forEach(h => {
+      let helems = postBody.querySelectorAll(h);
+      if (helems.length > 0) {
+        helems.forEach(elem => {
+          elem.id = encodeURI(elem.id);
+        })
+      }
+    })
+  })
+  </script>
+
+
   
 </div>
 <script>
@@ -2339,13 +2381,6 @@ while(xms--)
 </script>
 <script src="/media/js/motion.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 200
-  });
-</script>
 
 
 <script src="/media/js/mouse/love.js"></script>
